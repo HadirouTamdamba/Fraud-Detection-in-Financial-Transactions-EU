@@ -25,4 +25,4 @@ The best model is selected based on **ROC AUC**.
 A Flask API is created to detect fraud in real-time.
 
 ## Conclusion
-The **Random Forest** model achieved the best performance with a ROC AUC of 0.99. This project demonstrates how AI can help prevent financial fraud.
+The **Random Forest** model achieved the best performance with a ROC AUC of 0.90. This project demonstrates how AI can help prevent financial fraud.
