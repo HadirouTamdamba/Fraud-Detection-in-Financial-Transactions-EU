@@ -1,0 +1,10 @@
+preprocessing:
+  drop_columns:
+    - "Time"
+  normalize_columns:
+    - "Amount"
+  log_transform_columns:
+    - "Amount"
+  split:
+    test_size: 0.2
+    random_state: 42
