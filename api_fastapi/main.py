@@ -66,10 +66,15 @@ def predict(transaction: Transaction):
         
         print("Dataset after transformation :", data.head())  # Debugging
 
+
+        # Prediction
         prediction = model.predict(data)
+        probability = model.predict_proba(data)[:, 1]  # Fraud Probability
+
         result = "Fraud" if prediction[0] == 1 else "Normal transaction"
 
-        return {"Prediction": result}
+        return {"Prediction": result, "Probability": float(probability[0])}
+
 
     except Exception as e:
         print("Error :", str(e))

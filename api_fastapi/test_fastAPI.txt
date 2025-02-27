@@ -34,20 +34,24 @@ curl -X 'POST' \
   "V28": -0.0210530534538215,
   "Amount": 10.00
 }'
-
 Request URL
 http://127.0.0.1:8000/predict
+
+
 Server response
 Code	Details
 200	
+
 Response body
+
 {
-  "Prediction": "Normal transaction"
+  "Prediction": "Normal transaction",
+  "Probability": 0.03
 }
 
 
 Response headers
- content-length: 35 
+ content-length: 54 
  content-type: application/json 
- date: Thu,27 Feb 2025 13:21:47 GMT 
+ date: Thu,27 Feb 2025 14:29:24 GMT 
  server: uvicorn 
