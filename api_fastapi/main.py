@@ -3,9 +3,19 @@ from pydantic import BaseModel
 import joblib
 import numpy as np
 import pandas as pd
+import os 
 
 # Load trained model
-model = joblib.load('model_training/model/fraud_detection_model.pkl')
+
+model_path = 'model_training/model/fraud_detection_model.pkl'
+
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"The model does not exist in the location : {model_path}")
+
+model = joblib.load(model_path)
+print("Model loaded successfully!")
+print("Columns expected by the model:", model.feature_names_in_)
+
 
 # Define input data structure
 class Transaction(BaseModel):
@@ -37,7 +47,7 @@ class Transaction(BaseModel):
     V26: float
     V27: float
     V28: float
-    Amount_Log: float
+    Amount: float
 
 app = FastAPI()
 
@@ -47,7 +57,23 @@ def read_root():
 
 @app.post("/predict")
 def predict(transaction: Transaction):
-    data = pd.DataFrame([transaction.dict().values()], columns=transaction.dict().keys())
-    prediction = model.predict(data)
-    result = "Fraud" if prediction[0] == 1 else "Normal transaction"
-    return {"Prediction": result}
+    try:
+        data = pd.DataFrame([transaction.dict().values()], columns=transaction.dict().keys())
+
+        # Check if “Amount” is present before transformation
+        if "Amount" in data.columns:
+            data["Amount_Log"] = np.log1p(data["Amount"])  # Add Amount_Log
+        
+        print("Dataset after transformation :", data.head())  # Debugging
+
+        prediction = model.predict(data)
+        result = "Fraud" if prediction[0] == 1 else "Normal transaction"
+
+        return {"Prediction": result}
+
+    except Exception as e:
+        print("Error :", str(e))
+        return {"error": str(e)}
+
+# launch in terminal : python -m uvicorn api_fastapi.main:app --host 0.0.0.0 --port 8000 --reload
+# http://127.0.0.1:8000/docs : test the /predict endpoint directly by sending a POST request.
