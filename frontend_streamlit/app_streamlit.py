@@ -56,7 +56,7 @@ if st.button("Predict"):
 st.subheader("📜 Analyzed Transactions History")
 if len(st.session_state.history) > 0:
     df_history = pd.DataFrame(st.session_state.history)
-    st.dataframe(df_history)
+    st.dataframe(df_history) 
 else:
     st.info("No transactions analyzed yet.")
 
@@ -69,4 +69,7 @@ AI Engineer Data Scientist Associate | MLOps Engineer
 
 🔗 [LinkedIn](https://www.linkedin.com/in/hadirou-tamdamba/)  
 🔗 [GitHub](https://github.com/HadirouTamdamba)  
-""", unsafe_allow_html=True)
+""", unsafe_allow_html=True) 
+
+
+# Launching on terminal: streamlit run "d:/Mon Portfolio Projets/Project_Fraud-Detection-in-Financial-Transactions-EU/frontend_streamlit/app_streamlit.py"
