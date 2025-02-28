@@ -4,14 +4,14 @@ import json
 import pandas as pd
 
 # API URL Configuration
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://project-fraud-detection-in-financial.onrender.com" 
 
 # Store transaction history
 if "history" not in st.session_state:
     st.session_state.history = []
-
+ 
 # Application Title
-st.title("💳 Real Time Fraud Detection in Financial Transactions by European cardholders")
+st.title("💳 Real Time Fraud Detection in Financial Transactions by European Cardholders")
 
 # Description
 st.markdown("Enter the transaction features to check whether it is fraudulent or normal.")
@@ -60,4 +60,13 @@ if len(st.session_state.history) > 0:
 else:
     st.info("No transactions analyzed yet.")
 
-# Launching on terminal: streamlit run "d:/Mon Portfolio Projets/Project_Fraud-Detection-in-Financial-Transactions-EU/frontend_streamlit/app_streamlit.py"
+# About the Author Section
+st.markdown("""
+---
+### 👨‍💻 About the Author
+**Hadirou Tamdamba**  
+AI Engineer Data Scientist Associate | MLOps Engineer  
+
+🔗 [LinkedIn](https://www.linkedin.com/in/hadirou-tamdamba/)  
+🔗 [GitHub](https://github.com/HadirouTamdamba)  
+""", unsafe_allow_html=True)
