@@ -1,7 +1,11 @@
 fastapi
 uvicorn
 joblib
-pandas
 numpy
 pydantic
 scikit-learn 
+streamlit
+requests
+pandas
+os
+
