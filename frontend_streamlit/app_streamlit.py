@@ -4,7 +4,8 @@ import json
 import pandas as pd
 
 # API URL Configuration
-API_URL = "https://project-fraud-detection-in-financial.onrender.com" 
+
+API_URL = "https://project-fraud-detection-in-financial.onrender.com/predict"
 
 # Store transaction history
 if "history" not in st.session_state:
