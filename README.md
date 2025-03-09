@@ -12,17 +12,15 @@ The **Credit Card Fraud Detection** dataset contains 284,807 transactions, of wh
 - Distribution of amounts.
 
 ## Modeling
-Comparison of several models:
-- **Logistic Regression**
+
 - **Random Forest**
-- **Gradient Boosting**
-- **XGBoost**
+
 
 ## Evaluation
 The best model is selected based on **ROC AUC**.
 
 ## Deployment
-A Flask API is created to detect fraud in real-time.
+A Fast API is created to detect fraud in real-time.
 
 ## Conclusion
 The **Random Forest** model achieved the best performance with a ROC AUC of 0.90. This project demonstrates how AI can help prevent financial fraud.
