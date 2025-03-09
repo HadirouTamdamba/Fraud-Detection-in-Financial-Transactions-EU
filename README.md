@@ -69,7 +69,7 @@ The best model was evaluated on the test data, and the following results were ob
 ## Installation and Usage
 
 ### Prerequisites
-- Python 3.9  
+- Python 3.12 
 - AWS Account (for deploying the API if needed)  
 - GitHub Account for hosting the repository
 
@@ -84,6 +84,7 @@ The best model was evaluated on the test data, and the following results were ob
    pip install -r requirements.txt
 
 3. **Running the Streamlit Application**
+   
 Navigate to the Streamlit Directory
 cd frontend_streamlit
 
