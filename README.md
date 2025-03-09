@@ -79,3 +79,24 @@ The best model was evaluated on the test data, and the following results were ob
    ```bash
    git clone https://github.com/HadirouTamdamba/Fraud-Detection-in-Financial-Transactions-EU.git
    cd Fraud-Detection-in-Financial-Transactions-EU
+
+2. **Install Dependencies**
+   pip install -r requirements.txt
+
+3. **Running the Streamlit Application**
+Navigate to the Streamlit Directory
+cd frontend_streamlit
+
+## Contributing
+Contributions are welcome! Please follow these steps:
+  1. Fork the project.
+  2. Create a new branch (feature/new-feature).
+  3. Commit your changes (git commit -m 'Add new feature').
+  4. Push the branch (git push origin feature/new-feature).
+  5. Open a Pull Request.
+
+
+
+
+---
+
