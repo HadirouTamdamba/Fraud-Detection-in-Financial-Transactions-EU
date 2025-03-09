@@ -53,4 +53,29 @@ Due to the extreme imbalance in the dataset, most models tend to favor the major
 
 The best model was evaluated on the test data, and the following results were obtained:
 
-**Distribution after SMOTE:**
+## Deployment
+
+### FastAPI API
+- **Backend:** A FastAPI application that serves the model for real-time predictions.
+- **Deployment:** The API is deployed on Render, making it accessible via a public endpoint.
+  - **API URL:** `https://project-fraud-detection-in-financial.onrender.com/predict`
+
+### Streamlit Application
+- **Frontend:** An interactive Streamlit app that collects transaction features from the user, sends them to the FastAPI API, and displays the prediction and probability.
+- **Hosting:** The Streamlit app is hosted on GitHub Pages for easy sharing.
+
+---
+
+## Installation and Usage
+
+### Prerequisites
+- Python 3.9  
+- AWS Account (for deploying the API if needed)  
+- GitHub Account for hosting the repository
+
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/HadirouTamdamba/Fraud-Detection-in-Financial-Transactions-EU.git
+   cd Fraud-Detection-in-Financial-Transactions-EU
