@@ -105,9 +105,13 @@ Contributions are welcome! Please follow these steps:
 The Random Forest Classifier combined with SMOTE proved to be highly effective for this imbalanced fraud detection problem. With an Recall nearing 0.84 and strong performance metrics for the minority (fraud) class, the model demonstrates its ability to detect fraudulent transactions reliably. The deployment of the FastAPI on Render and the interactive Streamlit app hosted on GitHub Pages showcase a robust end-to-end solution, highlighting skills in machine learning, API development, and cloud deployment.
 
 Tech Stack:
+
 ✅ Random Forest Model for fraud detection
+
 ✅ FastAPI (Render) for backend inference
+
 ✅ Streamlit for interactive UI
+
 ✅ AWS EC2 & Route 53 for cloud deployment
 
 
