@@ -133,6 +133,16 @@ A special thanks to all **stakeholders, researchers, and contributors** who have
 
 ---
 
+## 👨‍💻 About the Author  
+**Hadirou Tamdamba**  
+_AI Engineer Data Scientist Associate | Machine Learning Engineer_  
+
+🔗 **LinkedIn**: [Hadirou Tamdamba](https://www.linkedin.com/in/hadirou-tamdamba/)  
+🔗 **GitHub**: [HadirouTamdamba](https://github.com/HadirouTamdamba)  
+📧 **Email**: hadirou.tamdamba@outlook.fr  
+
+---
+
 📢 **Feel free to explore, contribute, or provide feedback!**  
 🚀 _Let's make digital transactions more secure together!_  
 
