@@ -67,7 +67,7 @@ The best model was evaluated on the test data, and the following results were ob
 
 ### Streamlit Application
 - **Frontend:** An interactive Streamlit app that collects transaction features from the user, sends them to the FastAPI API, and displays the prediction and probability.
-- **Hosting:** The Streamlit app is hosted on GitHub Pages for easy sharing (****).
+- **Hosting:** The Streamlit app is hosted on GitHub Pages for easy sharing.
 - **Link:** [Application-Streamlit : Fraud Detection Financial](http://hadi-fraud-detection.duckdns.org/)
 
 ---
@@ -126,7 +126,7 @@ The deployment of the **FastAPI backend** on **AWS Lambda** and the **Streamlit 
 
 ---
 
-## 🙏 Acknowledgments  
+## Acknowledgments  
 We extend our sincere gratitude to the **European financial institutions** and **data providers** that facilitated the collection of transactional data for this project. Their valuable contributions have been instrumental in advancing fraud detection research and enhancing financial security.  
 
 A special thanks to all **stakeholders, researchers, and contributors** who have supported this initiative to make digital transactions safer and more secure for everyone.  
