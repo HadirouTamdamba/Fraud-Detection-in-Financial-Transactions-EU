@@ -1,4 +1,3 @@
-
 # Fraud Detection in Financial Transactions by European Cardholders
 
 [![GitHub issues](https://img.shields.io/github/issues/HadirouTamdamba/Fraud-Detection-in-Financial-Transactions-EU)](https://github.com/HadirouTamdamba/Fraud-Detection-in-Financial-Transactions-EU/issues)
@@ -7,11 +6,12 @@
 ## 📌 Overview  
 This project presents a **complete end-to-end system** for detecting **fraudulent financial transactions** using **Machine Learning**. It integrates:  
 - 🔄 **Automated data pipeline** for preprocessing  
-- 🧠 **Random Forest model** optimized for fraud detection  
-- ⚡ **FastAPI backend** deployed on **AWS Lambda** for real-time inference  
+- 🧠 **Random Forest Classifier and SMOTE** optimized for fraud detection  
+- ⚡ **FastAPI backend** deployed on **Render, AWS Lambda** for real-time inference  
 - 💻 **Interactive Streamlit web application** hosted on **AWS EC2**  
+- 📊 **Historical transaction logs** for analysis and download  
 
-This solution demonstrates expertise in **data preprocessing, model training (handling imbalanced data), API development, and cloud deployment** with **AWS EC2 & Nginx**.  
+This solution demonstrates expertise in **data preprocessing, model training (handling imbalanced data), API development, and Cloud deployment** with **AWS EC2 & Nginx**.  
 
 ---
 
@@ -63,12 +63,13 @@ The best model was evaluated on the test data, and the following results were ob
 ### FastAPI API
 - **Backend:** A FastAPI application that serves the model for real-time predictions.
 - **Deployment:** The API is deployed on **Render**, making it accessible via a public endpoint.
-  - **API URL:** `https://project-fraud-detection-in-financial.onrender.com/predict`
+  - **API URL:** https://project-fraud-detection-in-financial.onrender.com/predict 
 
 ### Streamlit Application
 - **Frontend:** An interactive Streamlit app that collects transaction features from the user, sends them to the FastAPI API, and displays the prediction and probability.
-- **Hosting:** The Streamlit app is hosted on GitHub Pages for easy sharing.
-- **Link:** [Application-Streamlit : Fraud Detection Financial](http://hadi-fraud-detection.duckdns.org/)
+- **Historical Transactions:** The application maintains a **history of all analyzed transactions**, displaying their fraud probabilities and allowing users to **download the transaction history** as a CSV file.
+- **Hosting:** The Streamlit app is hosted on **AWS EC2** for easy sharing.
+- **Link:** [Application-Streamlit : Fraud Detection in Financial Transactions by European Cardholders](http://hadi-fraud-detection.duckdns.org/)
 
 ---
 
@@ -85,14 +86,19 @@ The best model was evaluated on the test data, and the following results were ob
    ```bash
    git clone https://github.com/HadirouTamdamba/Fraud-Detection-in-Financial-Transactions-EU.git
    cd Fraud-Detection-in-Financial-Transactions-EU
+   ```
 
 2. **Install Dependencies**
+   ```bash
    pip install -r requirements.txt
+   ```
 
 3. **Running the Streamlit Application**
    
-Navigate to the Streamlit Directory
-cd frontend_streamlit
+   Navigate to the Streamlit Directory  
+   ```bash
+   cd frontend_streamlit
+   ```
 
 --- 
 
@@ -112,8 +118,9 @@ The **Random Forest Classifier combined with SMOTE** has proven highly effective
 ✅ **Recall score ~0.84** for fraudulent transactions  
 ✅ **Robust detection of fraudulent activities**  
 ✅ **Scalable & efficient deployment** on **AWS Lambda & EC2**  
+✅ **Complete transaction history tracking & export functionality**  
 
-The deployment of the **FastAPI backend** on **AWS Lambda** and the **Streamlit web app** on **AWS EC2** showcases a **robust and scalable end-to-end solution**. This project highlights advanced skills in **machine learning, API development, and cloud computing**.  
+The deployment of the **FastAPI backend** on **AWS Lambda, Render** and the **Streamlit web app** on **AWS EC2** showcases a **robust and scalable end-to-end solution**. This project highlights advanced skills in **Machine Learning, API development, and Cloud Computing**.  
 
 ---
 
@@ -123,6 +130,7 @@ The deployment of the **FastAPI backend** on **AWS Lambda** and the **Streamlit 
 ✔️ **FastAPI (AWS Lambda)** for backend inference  
 ✔️ **Streamlit** for interactive UI  
 ✔️ **AWS EC2 & Nginx** for cloud deployment  
+✔️ **Transaction history tracking & CSV export**  
 
 ---
 
@@ -145,6 +153,3 @@ _AI Engineer Data Scientist Associate | Machine Learning Engineer_
 
 📢 **Feel free to explore, contribute, or provide feedback!**  
 🚀 _Let's make digital transactions more secure together!_  
-
-
-
