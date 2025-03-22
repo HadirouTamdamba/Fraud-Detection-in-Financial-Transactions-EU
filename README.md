@@ -15,6 +15,22 @@ This solution demonstrates expertise in **data preprocessing, model training (ha
 
 ---
 
+## 📊 Features  
+🚀 **Live Demo** 👉 [http://hadi-fraud-detection.duckdns.org](http://hadi-fraud-detection.duckdns.org)  
+
+### ✅ **Real Time Fraud Detection in Financial Transactions by European Cardholders**  
+- The model analyzes transactions and provides an **instant fraud probability score**.  
+
+### 📜 **Transaction History & Export**  
+- Every analyzed transaction is stored in a history log.  
+- Users can **view and download** the full history, including fraud probabilities.  
+
+### 🔒 **Scalable & Secure Deployment**  
+- Backend hosted on **AWS Lambda, Render** using **FastAPI**.  
+- Frontend powered by **Streamlit**, deployed on **AWS EC2 & Nginx**.  
+
+---
+
 ## Problem Statement
 
 The goal is to detect fraudulent transactions in a dataset of credit card transactions. Financial institutions can use this system to reduce fraud risk and improve their security systems.
@@ -117,8 +133,11 @@ The **Random Forest Classifier combined with SMOTE** has proven highly effective
 
 ✅ **Recall score ~0.84** for fraudulent transactions  
 ✅ **Robust detection of fraudulent activities**  
-✅ **Scalable & efficient deployment** on **AWS Lambda & EC2**  
-✅ **Complete transaction history tracking & export functionality**  
+✅ **Scalable & efficient deployment** on **AWS Lambda & EC2** 
+✅ **Real-time fraud probability calculation** 
+✅ **Complete transaction history tracking & export functionality** 
+ 
+ 
 
 The deployment of the **FastAPI backend** on **AWS Lambda, Render** and the **Streamlit web app** on **AWS EC2** showcases a **robust and scalable end-to-end solution**. This project highlights advanced skills in **Machine Learning, API development, and Cloud Computing**.  
 
@@ -137,7 +156,7 @@ The deployment of the **FastAPI backend** on **AWS Lambda, Render** and the **St
 ## Acknowledgments  
 We extend our sincere gratitude to the **European financial institutions** and **data providers** that facilitated the collection of transactional data for this project. Their valuable contributions have been instrumental in advancing fraud detection research and enhancing financial security.  
 
-A special thanks to all **stakeholders, researchers, and contributors** who have supported this initiative to make digital transactions safer and more secure for everyone.  
+A special thanks to all **Stakeholders, Researchers, and Contributors** who have supported this initiative to make digital transactions safer and more secure for everyone.  
 
 ---
 
