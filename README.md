@@ -134,7 +134,6 @@ The **Random Forest Classifier combined with SMOTE** has proven highly effective
 ✅ **Recall score ~0.84** for fraudulent transactions  
 ✅ **Robust detection of fraudulent activities**  
 ✅ **Scalable & efficient deployment** on **AWS Lambda & EC2**
-
 ✅ **Real-time fraud probability calculation** 
 ✅ **Complete transaction history tracking & export functionality** 
  
