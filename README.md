@@ -31,7 +31,7 @@ This solution demonstrates expertise in **data preprocessing, model training (ha
 
 ---
 
-## Problem Statement
+## 🧠 Problem Statement
 
 The goal is to detect fraudulent transactions in a dataset of credit card transactions. Financial institutions can use this system to reduce fraud risk and improve their security systems.
 
@@ -45,14 +45,14 @@ The project uses the **Credit Card Fraud Detection** dataset from Kaggle, which 
 
 ---
 
-## Exploratory Data Analysis (EDA)
+## 📊 Exploratory Data Analysis (EDA)
 
 - **Class Distribution:** The dataset shows a significant imbalance between normal and fraudulent transactions.
 - **Amount Distribution:** The transaction amount is also analyzed, with a log transformation applied to manage skewness.
 
 ---
 
-## Modeling
+## 💻 Modeling
 
 ### Data Pipeline
 - **Automated Data Pipeline:** Implemented using a YAML configuration file to manage data cleaning, normalization, and log transformation.
@@ -74,7 +74,7 @@ Due to the extreme imbalance in the dataset, most models tend to favor the major
 
 The best model was evaluated on the test data, and the following results were obtained:
 
-## Deployment
+## 🚀 Deployment
 
 ### FastAPI API
 - **Backend:** A FastAPI application that serves the model for real-time predictions.
@@ -120,7 +120,7 @@ The best model was evaluated on the test data, and the following results were ob
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
-  1. Fork the project.
+  1. Clone the project.
   2. Create a new branch (feature/new-feature).
   3. Commit your changes (git commit -m 'Add new feature').
   4. Push the branch (git push origin feature/new-feature).
@@ -133,8 +133,8 @@ The **Random Forest Classifier combined with SMOTE** has proven highly effective
 
 ✅ **Recall score ~0.84** for fraudulent transactions  
 ✅ **Robust detection of fraudulent activities**  
-✅ **Scalable & efficient deployment** on **AWS Lambda & EC2** 
-✅ **Real-time fraud probability calculation** 
+✅ **Scalable & efficient deployment** on **AWS Lambda & EC2** \\
+✅ **Real-time fraud probability calculation** \\
 ✅ **Complete transaction history tracking & export functionality** 
  
  
